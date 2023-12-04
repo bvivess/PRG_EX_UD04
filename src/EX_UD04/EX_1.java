@@ -49,36 +49,36 @@ public class EX_1 {
     
     // retrocedir 1 posició (sempre que es pugui)
     private static void retrocedir(ArrayList<String> historial) {
-        // decrementar 'index' en 1 posició
+        // decrementar 'index' en 1 posicio
         // TO-DO code application logic here
         
     }
     
     // retrocedir 'i' posicions (sempre que es pugui)
     private static void retrocedir(ArrayList<String> historial, int i) {
-        // decrementar 'index' en 'i' posició
+        // decrementar 'index' en 'i' posicio
         // TO-DO code application logic here
         
     }
     
     // avançar 1 posició (sempre que es pugui)
     private static void avancar(ArrayList<String> historial) {
-        // incrementar 'index' en 1 posició
+        // incrementar 'index' en 1 posicio
         // TO-DO
         
     } 
     
     // avançar 'i' posicions (sempre que es pugui)
     private static void avancar(ArrayList<String> historial, int i) {
-        // incrementar 'index' en 'i' posició
-        // TO-DO
+        // incrementar 'index' en 'i' posicio
+        // TO-DO code application logic here
         
     }
 
     // mostrar tot l'historial
     private static void mostrarHistorial(ArrayList<String> historial) {
         // mostrar tot l'historial
-        // TO-DO
+        // TO-DO code application logic here
         
     }
 

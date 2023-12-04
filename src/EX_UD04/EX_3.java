@@ -32,7 +32,7 @@ public class EX_3 {
     
     private static void emplenaTauler(int[][] tauler, ArrayList<int[]> torres) {
         // Per a cada 'torre' de 'torres':
-        //     - ha de situar cada torre en el tauler ? SIMBOL_REINA	
+        //     - ha de situar cada torre en el tauler ? SIMBOL_TORRE	
         //     - ha de indicar les caselles que cada torre mata ? SIMBOL_MATAT
         
         // TO-DO code application logic here
