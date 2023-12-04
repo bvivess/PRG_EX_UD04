@@ -10,7 +10,7 @@ public class EX_3 {
     static final int SIMBOL_MATAT = 1;
     static final int SIMBOL_TORRE = 9;
     static int[][] tauler;
-    static ArrayList<int[]> torres = new ArrayList<>(); // posició (x,y) de cada torre
+    static ArrayList<int[]> torres = new ArrayList<>(); // posicio (x,y) de cada torre
 
     public static void main(String[] args) {
         NTAULER = UtilitatsConsola.llegirSencer("Mida del tauler: ");
@@ -26,7 +26,7 @@ public class EX_3 {
         emplenaTauler(tauler, torres);
         comprovaTorres(torres);
 
-        // Mostrar la matriu amb la puntuació 
+        // Mostrar la matriu amb la puntuacio 
         UtilitatsMatrius.mostrarMatriu(tauler);
     }
     
@@ -52,11 +52,11 @@ public class EX_3 {
         
         // Genera les N posicions de cada torre
         while (nTorres < NTORRES) {
-            // Crea posició  
+            // Crea posicio  
             boolean okTorre = true;
             int[] torreProva = UtilitatsArrays.generaArray(2,0, tauler.length-1); 
             
-            // Comprova si ja existeix, posició a posició
+            // Comprova si ja existeix, posicio a posicio
             for (int j = 0; j < torres.size(); j++) {
                 int[] torre = torres.get(j);
                 
