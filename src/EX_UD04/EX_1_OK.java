@@ -34,6 +34,7 @@ public class EX_1_OK {
     private static String visitarPagina(ArrayList<String> historial) {
         String web;
         
+        // es comprova si la llista està buida
         if (!(historial.isEmpty())) 
             web = historial.get(index);
         else
@@ -45,7 +46,9 @@ public class EX_1_OK {
     private static String visitarPagina(ArrayList<String> historial, int i) {
         String web;
         
+        // es comprova si la llista està buida
         if (!(historial.isEmpty())) {
+            // es comprova si l'índex està entre els límits
             index = Math.max(0,Math.min(historial.size()-1, i));
             web = historial.get(index);
         } else
@@ -55,26 +58,29 @@ public class EX_1_OK {
     }
     
     private static void retrocedir(ArrayList<String> historial) {
+        // es comprova si la llista està buida
         if (!(historial.isEmpty()))
-            retrocedir(historial,1);
+            retrocedir(historial,1);  // es reutilitza el mètode sobrecarregat
     }
     
     private static void retrocedir(ArrayList<String> historial, int i) {
+        // es comprova si la llista està buida
         if (!(historial.isEmpty()))
-            index = Math.max(0, index-i);
+            index = Math.max(0, index-i);  // es comprova si l'índex està entre els límits
     }
     
     private static void avancar(ArrayList<String> historial) {
         if (!(historial.isEmpty()))
-            avancar(historial,1);
+            avancar(historial,1);  // es reutilitza el mètode sobrecarregat
     } 
     
     private static void avancar(ArrayList<String> historial, int i) {
         if (!(historial.isEmpty()))
-            index = Math.min(historial.size()-1, index+i);
+            index = Math.min(historial.size()-1, index+i);  // es comprova si l'índex està entre els límits
     }
 
     private static void mostrarHistorial(ArrayList<String> historial) {
+        // es comprova si la llista està buida
         if(historial.isEmpty() == true)
             for (String h : historial)
                 System.out.println(h);

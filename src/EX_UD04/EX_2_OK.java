@@ -31,7 +31,7 @@ public class EX_2_OK {
         int i = 0;  // posició a insertar 'num'
         
         for (Integer a : array) {  // per a cada element de l'array
-            if (a >= num)  
+            if (a >= num)  // es comprova l'element
                 break;
             i++;
         }

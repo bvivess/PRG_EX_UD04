@@ -64,7 +64,7 @@ public class EX_3_OK {
             for (int[] torre2:torres)
                 if (Arrays.compare(torre1, torre2) != 0) // <-- excepte ella mateixa
                     if (!(comprovaTorre(torre1, torre2))) {
-                        System.out.print("Torre KO amb "+ torre2[0] + "-" + torre2[1] + " ");
+                        System.out.print("Torre KO amb " + torre2[0] + "-" + torre2[1] + " ");
                         okTorre = false;
                     }
             if (okTorre)
@@ -76,6 +76,7 @@ public class EX_3_OK {
     }  
     
     private static boolean comprovaTorre(int[] torre1, int[] torre2) {
+        // si 'torre1' té fila o columna igual a 'torre2'
         if ((torre1[0] == torre2[0]) || (torre1[1] == torre2[1]))
             return false;
         else        
@@ -111,6 +112,7 @@ public class EX_3_OK {
     }
 
     private static void mostraTorres(ArrayList<int[]> torres) {
+        // per a cada torre
         for (int[] torre : torres)
             UtilitatsArrays.mostraArray(torre);
     }
